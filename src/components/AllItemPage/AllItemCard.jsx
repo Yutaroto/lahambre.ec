@@ -1,17 +1,18 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const AllItemCard = ({ item }) => {
   return (
-    <ItemCard>
+    <ItemCardLink to={`/ItemDetail/${item.id}`}>
       <ItemImage src={item.image} alt={item.id} />
       <ItemName>{item.brand}</ItemName>
       <ItemName>{item.name}</ItemName>
       <p>{item.price}</p>
-    </ItemCard>
+    </ItemCardLink>
   );
 };
 
-const ItemCard = styled.div`
+const ItemCardLink = styled(Link)`
   border: 1px solid #a9a9a9;
   margin: 16px;
   width: 200px;
@@ -19,6 +20,8 @@ const ItemCard = styled.div`
   border-radius: 10px;
   justify-content: space-between;
   background-color: #ffffff;
+  text-decoration: none;
+  color: black;
 `;
 const ItemImage = styled.img`
   width: 100%;
