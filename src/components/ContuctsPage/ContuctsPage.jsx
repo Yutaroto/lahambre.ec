@@ -24,10 +24,10 @@ const InputA = styled.input`
 `;
 
 const InputS = styled.input`
-  width: 300px; /* 横幅を300pxにする */
-  height: 40px; /* 高さを40pxにする */
-  padding: 8px; /* 中の余白もつけるときれい */
-  font-size: 16px; /* 文字サイズ */
+  width: 300px;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
 `;
